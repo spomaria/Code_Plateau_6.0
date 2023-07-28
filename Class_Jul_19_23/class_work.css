@@ -1,0 +1,82 @@
+/* You can always go to colourhunt.co for good color combinations */
+
+body{
+    margin: 0;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    /* font-family: 'Niconne', cursive;
+    font-family: 'Pacifico', cursive; */
+}
+
+#header{
+    background-color: #75C2F6;
+    padding: 100px 0;
+}
+
+h1{
+    font-size: 5rem;
+    font-family: 'Pacifico', cursive;
+}
+
+.web{
+    font-size: 3rem;
+}
+
+h2{
+    color: #75C2F6;
+    margin-top: 60px;
+}
+
+img{
+    width: 200px;
+}
+
+.about{
+    width: 50%;
+    margin: auto;
+    margin-top: 30px;
+}
+
+h3{
+    color: #0b81cf;
+}
+
+li{
+    list-style-type: none;
+    margin-right: 40px;
+}
+
+h4{
+    color: #064f80;
+}
+
+.get{
+    width: 50%;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+footer{
+    padding: 50px 0;
+    background-color: #0b81cf;
+    color: white;
+    /* this code makes the footer fixed at the buttom of the page */
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+div{
+    padding-bottom: 40px;
+}
+
+hr{
+    width: 50%;
+    border: 2px solid red;
+}

@@ -1,0 +1,27 @@
+:root{
+    --blue:blue;
+    --yellow:yellow;
+}
+
+#first{
+    color: var(--yellow);
+}
+
+p{
+    --blue: #0000ff
+    background-color: var(--blue);
+}
+
+/* use 'cd' to change directory
+use 'mkdir' to create a directory (folder)
+use 'touch' to create a file
+To remove a file, use 'rm' followed by the filename 
+To remove a directory, first go out of that directory then
+use 'rm -r directoryname'
+use 'cd ..' to go out of the current direcetory */
+
+/* To set up so as to set codes to github account 
+to initialize the git, open the Git bash terminal and type
+'git init'
+'git status' shows the files and folders in that folder
+*/

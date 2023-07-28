@@ -1,0 +1,55 @@
+/* This is how to combine two tags */
+h1, p{
+    color: blue;
+}
+
+@media(max-width: 600px) and (min-width: 500px){
+    h1, p{
+        color: red;
+    }
+}
+
+/* This is how to combine a parent-child tags together */
+div > h2,h4{
+    color: red;
+}
+
+/* This is descendant combination */
+div li{
+    color: purple;
+}
+
+/* This is how to use the chaining selector */
+/* This allows for specificity */
+h1.world#word{
+    color: red;
+    background-color: black;
+}
+
+button{
+    padding: 20px;
+    background-color: black;
+    color: green;
+    font-size: 1.5rem;
+}
+
+button:hover{
+    background-color: pink;
+    padding: 50px;
+}
+
+
+/* In-line Styling takes preference over external styling
+To give more preference to an external styling 
+so that it overrides the in-line styling,
+add !Important to the property in the css file */
+
+/* Next Class
+Flexbox
+grid 
+bootstrap */
+
+/* Assignment
+One picture, replicate five times
+stack them with the middle on higher
+use shadow */

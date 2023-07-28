@@ -1,0 +1,36 @@
+.code{
+    text-align: center;
+    text-decoration: underline;
+    color: ;
+
+}
+
+/* This is how to write comments in css*/
+/* css stands for Cascading Style Sheets*/
+/* always use a dot before a class name when styling in css*/
+.code2{
+    text-align: center;
+
+}
+
+p{
+    text-align: justify;
+}
+
+/* use a hash before an id name when styling in css*/
+#root{
+    background-color: pink;
+    margin: 50px;
+    
+}
+
+button{
+    padding: 20px;
+    border: 30px;
+}
+
+/* the asterisk is a universal selector*/
+/* the universal selector applies changes to the entire document*/
+*{
+    color: red;
+}

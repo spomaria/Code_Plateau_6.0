@@ -1,0 +1,23 @@
+/* body{
+    text-align: center;
+    margin: 10px 10%;
+    width: 100%;
+}
+
+table{
+    align-items: center;
+    align-content: center;
+    width: 80%;
+    text-align: center;
+}
+
+table, th, td{
+    border: 1px solid;
+    border-collapse: collapse;
+    background-color: burlywood;
+} */
+
+.flex-container{
+    display: flex;
+    background-color: blue;
+}

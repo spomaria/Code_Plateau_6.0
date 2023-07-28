@@ -1,0 +1,64 @@
+body{
+    background-color: rgba(167, 6, 100, 0.164);
+}
+
+.pic1 > img{
+    height: 600px;
+    width: 400px;
+    position: relative;
+    top: 150px;
+    box-shadow: 10px 10px 5px 3px rgb(204, 175, 175);
+    /* The first value is the horizontal shadow,
+        second value is the vertical shadow 
+        third value makes the shadow blurry
+        fourth value adds spread to the shadow*/
+    border-radius: 25px;
+    /* This gives the picture curved borders */
+}
+
+.pic2 > img{
+    height: 600px;
+    width: 400px;
+    position: relative;
+    bottom: 500px;
+    left: 320px;
+    /* This is intended to make this picture shift and overlap
+        the first picture a little */
+    box-shadow: 10px 10px 5px 3px rgb(204, 175, 175);
+    border-radius: 25px;
+}
+
+
+.pic3 > img{
+    height: 600px;
+    width: 400px;
+    position: relative;
+    bottom: 1150px;
+    left: 640px;
+    box-shadow: 10px 10px 5px 3px rgb(204, 175, 175);
+    border-radius: 25px;
+}
+
+
+.pic4 > img{
+    height: 600px;
+    width: 400px;
+    position: relative;
+    bottom: 1709px;
+    left: 960px;
+    z-index: -1;
+    box-shadow: 10px 10px 5px 3px rgb(204, 175, 175);
+    border-radius: 25px;
+}
+
+
+.pic5 > img{
+    height: 600px;
+    width: 400px;
+    position: relative;
+    bottom: 2268px;
+    left: 1280px;
+    z-index: -2;
+    box-shadow: 10px 10px 5px 3px rgb(204, 175, 175);
+    border-radius: 25px;
+}
