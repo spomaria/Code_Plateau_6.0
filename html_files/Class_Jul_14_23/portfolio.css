@@ -15,8 +15,11 @@ body{
 }
 
 .val_1{
-    background-color: black;
+    background-color:  rgb(4, 4, 8)lack;
     overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
 }
 
 /* Style the links inside the navigation bar */
@@ -46,6 +49,7 @@ body{
     float: right;
     padding: 14px 16px;
     display: block;
+    border-radius: 300px;
   }
 
   h1{

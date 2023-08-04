@@ -24,4 +24,9 @@ use 'cd ..' to go out of the current direcetory */
 to initialize the git, open the Git bash terminal and type
 'git init'
 'git status' shows the files and folders in that folder
-*/
+'git add .' adds all the files and folders to the git
+use 'git add <filename>' to add a specific file
+'git commit -m "filename"'
+'git remote add origin link' 
+'git branch -M main'
+'git push -u origin main*/

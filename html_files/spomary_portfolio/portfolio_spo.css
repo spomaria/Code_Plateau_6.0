@@ -10,7 +10,13 @@ body{
 
 #header{
     background-color: #75C2F6;
-    padding: 100px 0;
+    padding: 30px 0;
+}
+
+.bodie{
+    background-color: #e7edf1;
+    padding: 30px 0;
+    text-align: center;
 }
 
 h1{
@@ -28,8 +34,18 @@ h2{
 }
 
 img{
-    width: 200px;
+    width: 100px;
 }
+
+.pic {
+    float: right;
+    padding: 14px 16px;
+    display: block;
+    border-radius: 300px;
+    position: relative;
+    bottom: 150px;
+    right: 150px;
+  }
 
 .about{
     width: 50%;
@@ -57,11 +73,11 @@ h4{
 }
 
 footer{
-    padding: 50px 0;
+    padding: 20px 0;
     background-color: #0b81cf;
     color: white;
     /* this code makes the footer fixed at the buttom of the page */
-    position: fixed;
+    /* position: fixed; */
     bottom: 0;
     right: 0;
     left: 0;
@@ -73,10 +89,14 @@ a{
 }
 
 div{
-    padding-bottom: 40px;
+    padding-bottom: 20px;
 }
 
 hr{
     width: 50%;
     border: 2px solid red;
+}
+
+sup{
+    font-size: 0.5rem;
 }

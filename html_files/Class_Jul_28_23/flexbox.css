@@ -1,0 +1,32 @@
+img{
+    width: 100px;
+    float: left;
+}
+
+ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    flex-wrap: wrap;
+    /* The flex-wrap is only used for parent tags */
+    /* justify-content: flex-end; */
+    height: 70vh;
+    align-items: flex-start;
+}
+
+/* This is a comment */
+
+.Home{
+    /* order: 1; */
+    align-self: flex-end;
+    flex-basis: 50px;
+    /* The flex-basis is a child property */
+}
+
+li{
+    flex-basis: 70px;
+    /* The flex-basis is a child property */
+    flex-shrink: 1;
+    flex-grow: 1;
+}
