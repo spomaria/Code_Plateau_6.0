@@ -39,6 +39,7 @@ var my2Var =10;
 // console.log("my2Var = ", my2Var);
 my2Var = my2Var--; //didn't work
 console.log("my2Var = ", my2Var);
+// This is lovely
 
 var myDec = 2.5;
 // myDec = myDec + 5;
