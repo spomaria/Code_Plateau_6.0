@@ -1,0 +1,48 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    background-color: #2196F3;
+    padding: 10px;
+    column-gap: 20px;
+    row-gap: 20px;
+  }
+  
+  .grid-item_1 {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid brown;
+    padding: 100px;
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .grid-item_2 {
+    background-color: blueviolet;
+    border: 1px solid whitesmoke;
+    padding: 100px;
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .grid-item_3 {
+    background-color: red;
+    border: 1px solid whitesmoke;
+    padding: 100px;
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .grid-item_4 {
+    background-color: peru;
+    border: 1px solid whitesmoke;
+    padding: 100px;
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .grid-item_5 {
+    background-color: green;
+    border: 1px solid whitesmoke;
+    padding: 100px;
+    font-size: 30px;
+    text-align: center;
+  }
