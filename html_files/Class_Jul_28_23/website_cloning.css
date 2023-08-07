@@ -1,0 +1,405 @@
+:root{
+    --body-background: aliceblue;
+}
+
+body{
+    /* This is to align contents in the centre */
+    text-align: center;
+    /* width: 80%; */
+    /* To fill all edges of the website */
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: aliceblue;
+}
+
+.header{
+    /* To give the header section a different background color */
+    background-color: rgb(34, 32, 32);
+    /* To give the font white color */
+    color: white;
+    /* To make the background color reach the edges of the website*/
+    margin: 0;
+    /* border: 0; */
+    padding: 30px 0;
+}
+
+.header button{
+    /* This shifts the button to the right side of the page */
+    float: right;
+    /* This sets a different background color for the button */
+    background-color: rgb(49, 47, 47);
+    color: white;
+    /* border-color: black; */
+    border: 0;
+    text-decoration: bold;
+    /* This makes the button edges curvy in nature*/
+    border-radius: 5px;
+    /* This adjusts the space ocupied by the button */
+    padding: 5px;
+}
+
+h2 > #bld{
+    text-decoration: bold;
+}
+
+#udl{
+    text-decoration: underline;
+}
+
+#bigger{
+    font-size: 1.7rem;
+}
+
+#left-btn{
+    background-color: blue;
+    color: white;
+    border: solid blue;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+#right-btn{
+    background-color: white;
+    position: absolute;
+    display: inline;
+    border: solid 1px rgb(201, 198, 198);
+    padding: 3px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.sect2{
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    /* padding: 5px 0; */
+    width: 70%;
+    margin: auto;
+    border: 1px solid rgb(231, 225, 225);   
+}
+
+.sect2-1{
+    border: 1px solid rgb(231, 225, 225);
+    margin-right: -5px;
+
+}
+
+.rep-pic{
+    border: 1px solid rgb(231, 225, 225);
+    margin-right: -63px;
+}
+
+#btn1{
+    padding: 10px 20px;
+    background-color: blue;
+    color: white;
+    font: bold;
+    font-size: 2rem;
+    border-radius: 60px;
+    position: relative;
+    bottom: 20px;
+    right: 835px;
+}
+
+.sect3{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 30px 0;
+    width: 70%;
+    margin: auto;
+    border: 1px solid rgb(231, 225, 225);   
+}
+
+a{
+    text-decoration: none;
+}
+
+.ital{
+    font-style: italic;
+}
+
+.bl{
+    color: blue;
+    font: bold;
+}
+
+#term{
+    border: 1px solid rgb(231, 225, 225);   
+    padding: 5px;
+    border-bottom-left-radius: 7px;
+    border-top-left-radius: 7px;
+    border: 1px solid blue;
+    background-color: blue;
+    color: white;
+    margin-right: -5px;
+}
+
+#desk{
+    border: 1px solid rgb(231, 225, 225);   
+    padding: 5px;
+    color: black;
+    background-color: aliceblue;
+    margin-right: -5px;
+}
+
+#dont{
+    border: 1px solid rgb(231, 225, 225);   
+    padding: 5px;
+    border-top-right-radius: 7x;
+    color: black;
+    background-color: aliceblue;
+}
+
+#btn2{
+    padding: 10px 20px;
+    background-color: blue;
+    color: white;
+    font: bold;
+    font-size: 2rem;
+    border-radius: 60px;
+    position: relative;
+    bottom: 115px;
+    right: 49%;
+}
+
+.sect4{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 20px 0;
+    width: 70%;
+    margin: auto;
+    border: 1px solid rgb(231, 225, 225);   
+}
+
+.sub-sect4{
+    display: flex;
+    /* flex-direction: column; */
+    background-color: var(--body-background);
+    padding: 20px 0 0 0;
+    width: 70%;
+    margin: auto;
+    border: 1px solid rgb(231, 225, 225);   
+    border-radius: 10px;
+}
+
+.sub-sect4-1{
+    display: flex;
+    /* flex-direction: column; */
+    background-color: black;
+    /* padding: 0 0 20px 0; */
+    width: 100%;
+    margin: 0 -5px -5px -1px;
+    border: 1px solid rgb(231, 225, 225);   
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: rgb(221, 157, 37);
+    text-align: left;
+    text-indent: 15px;
+    font: bolder;
+}
+
+#blue{
+    color: rgb(58, 173, 177);
+}
+
+#red{
+    color: rgb(216, 41, 41);
+}
+
+#btn3{
+    padding: 10px 20px;
+    background-color: blue;
+    color: white;
+    font: bold;
+    font-size: 2rem;
+    border-radius: 60px;
+    position: relative;
+    bottom: 200px;
+    right: 49%;
+}
+
+.sect5{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 10px 0;
+    width: 70%;
+    margin: auto;
+    border: 1px solid rgb(231, 225, 225);   
+}
+
+.sub-sect5{
+    display: flex;
+    /* flex-direction: column; */
+    background-color: var(--body-background);
+    padding: 20px 0 0 0;
+    width: 70%;
+    margin: auto;
+    border: 1px solid rgb(231, 225, 225);   
+    border-radius: 10px;
+}
+
+.sub-sect5-1{
+    /* display: flex;
+    flex-direction: column; */
+    gap: 0px;
+    background-color: black;
+    /* padding: 0 0 20px 0; */
+    width: 100%;
+    margin: 0 -5px -5px -1px;
+    border: 1px solid rgb(231, 225, 225);   
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: rgb(221, 157, 37);
+    text-align: left;
+    text-indent: 15px;
+    font: bolder;
+}
+
+#btn4{
+    padding: 10px 20px;
+    background-color: blue;
+    color: white;
+    font: bold;
+    font-size: 2rem;
+    border-radius: 60px;
+    position: relative;
+    bottom: 235px;
+    right: 49%;
+}
+
+.sect6{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 10px 0;
+    width: 70%;
+    margin: auto;
+    border: 1px solid rgb(231, 225, 225);   
+}
+
+.sub-sect6{
+    display: flex;
+    /* flex-direction: column; */
+    background-color: var(--body-background);
+    padding: 20px 0 0 0;
+    width: 70%;
+    margin: auto;
+    border: 1px solid rgb(231, 225, 225);   
+    border-radius: 10px;
+}
+
+.sub-sect6-1{
+    /* display: flex;
+    flex-direction: column; */
+    gap: 0px;
+    background-color: black;
+    /* padding: 0 0 20px 0; */
+    width: 100%;
+    margin: 0 -5px -5px -1px;
+    border: 1px solid rgb(231, 225, 225);   
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: rgb(221, 157, 37);
+    text-align: left;
+    text-indent: 15px;
+    font: bolder;
+}
+
+#btn5{
+    padding: 10px 20px;
+    background-color: blue;
+    color: white;
+    font: bold;
+    font-size: 2rem;
+    border-radius: 60px;
+    position: relative;
+    bottom: 265px;
+    right: 49%;
+}
+
+.sect7{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 0;
+    width: 70%;
+    margin: auto;
+    border: 1px solid rgb(231, 225, 225);   
+}
+
+/* .sub-sect7{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--body-background);
+    padding: 20px 0;
+    width: 7%;
+    margin: auto;
+    justify-content: center;
+    border: 1px solid rgb(231, 225, 225);   
+    border-radius: 50px;
+} */
+
+#btn6{
+    padding: 10px 20px;
+    background-color: white;
+    color: blue;
+    font: bold;
+    font-size: 2rem;
+    border-radius: 60px;
+}
+
+#btn6:hover{
+    color: green;
+    font-size: 40px;
+}
+
+#btn7{
+    padding: 10px 20px;
+    background-color: blue;
+    color: white;
+    font: bold;
+    font-size: 2rem;
+    border-radius: 60px;
+    position: relative;
+    bottom: 190px;
+    right: 49%;
+}
+
+.sect8{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 0;
+    width: 100%;
+    margin: auto;
+    border: 1px solid rgb(231, 225, 225);   
+}
+
+.sub-sect8{
+    display: flex;
+    flex-direction: row;
+    /* background-color: var(--body-background); */
+    /* padding: 20px 0 0 0; */
+    width: 70%;
+    margin: auto;
+    border-bottom: 1px solid rgb(231, 225, 225);
+    /* border: 1px solid rgb(231, 225, 225);   
+    border-radius: 10px; */
+}
+
+i{
+    color: purple;
+    font-size: 4rem;
+}
+
+i:hover{
+    color: green;
+    font-size: 6rem;
+}
+
+/* JavaScript makes websites responsive 
+It also ensures functionality */
+/* If it's easy, it's not worth learning */

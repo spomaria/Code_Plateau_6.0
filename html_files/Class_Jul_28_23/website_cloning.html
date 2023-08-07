@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="website_cloning.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Niconne&family=Pacifico&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/0a6b3dfb73.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="header">
+        <button>Pages Help</button>
+        <p><b>Github</b>Pages<p>
+        <h1>Website for you and your projects.</h1>
+        <p>Hosted directly from your <span id="udl">Github repository.</span> 
+            Just edit, push, and your changes are live.</p>
+    </div>
+    <br>
+    <div class="sect1">
+        <p id="bigger">
+            Ready to get started? Build your own site <br>
+            from scratch or generate one for your <br>
+            project.
+        </p>
+        <p>
+            You get one site per Github account and organisation, <br>
+            and unlimited project sites. Let's get started.
+        </p>
+        <br>
+        <div class="two-btns">
+            <button id="left-btn">User or organisation site</button>
+            <button id="right-btn">Project site</button>
+        </div>
+    </div>
+    <br>
+    <br> <br>
+
+    <div class = "sect2">
+        <div class="sect2-1">
+            <h2>Create a repository</h2> <br>
+            <h4>
+                Head over to <span class = "bl"><a href="https://github.com">GitHub</a></span>
+                and <span class = "bl"><a href="https://github.com/new">create a new public repository</a></span>
+                named <span class ="ital">username</span>.github.io, where <span class ="ital">username</span> is your
+                username (or organization name) on GitHub.
+            </h4>
+            <br>
+            <p>
+                If the first part of the repository doesn't exactly match your username, it <br>
+                won't work, so make sure to get it right.
+            </p>
+        </div>
+        <div class="rep-pic">
+            <img src="./Create_Repository.JPG" alt="Repository Creation Interface" id="repository">
+        </div>
+        <div>
+            <button id="btn1">1</button>
+        </div>
+    </div>
+    <br><br>
+
+    <div class = "sect3">
+        <p>
+            What git client are you using?
+        </p>
+        <div class="box-a">
+            <a href="" id="term">A terminal</a>
+            <a href="" id="desk">GitHub Desktop</a>
+            <a href="" id="dont">I don't know</a>
+        </div>
+        <div>
+            <button id="btn2">?</button>
+        </div>
+    </div>
+
+    <div>
+        <i class="fa-brands fa-instagram"></i>
+    </div>
+    <br><br>
+
+    <div class="sect4">
+        <div>
+            <h2>Clone the Repository</h2> 
+            <p>Go to the folder where you want to store your project, and clone the new repository:</p>
+        </div>
+        <div class="sub-sect4">
+            <br>
+            <div class="sub-sect4-1">
+                <p> <span id="blue">~</span> <span id="red">$</span> git clone https://github.com/<em>username/username</em>.github.io</p>
+            </div>
+        </div>
+        <div>
+            <button id="btn3">2</button>
+        </div>
+    </div>
+    <br><br>
+
+    <div class="sect5">
+        <div>
+            <h2>Hello World</h2> 
+            <p>Enter the project folder and add an index.html file:</p>
+        </div>
+        <div class="sub-sect5">
+            <br>
+            <div class="sub-sect5-1">
+                <p> <span id="blue">~</span> <span id="red">$</span> cd username.github.io</p>
+                <p> <span id="blue">~</span> <span id="red">$</span> echo "Hello World" > index.html</p>
+            </div>
+        </div>
+        <div>
+            <button id="btn4">3</button>
+        </div>
+    </div>
+    <br><br>
+
+    <div class="sect6">
+        <div>
+            <h2>Push it</h2> 
+            <p>Add, commit, and push your changes:</p>
+        </div>
+        <div class="sub-sect6">
+            <br>
+            <div class="sub-sect6-1">
+                <p> <span id="blue">~</span> <span id="red">$</span> git add --all</p>
+                <p> <span id="blue">~</span> <span id="red">$</span> git commit -m "Initial commit"</p>
+                <p> <span id="blue">~</span> <span id="red">$</span> git push -u origin main</p>
+            </div>
+        </div>
+        <div>
+            <button id="btn5">4</button>
+        </div>
+    </div>
+    <br><br>
+
+    <div class="sect7">
+        <div>
+            <h2>... and you're done!</h2> 
+            <p>fire up a browser and go up to https://<em>username</em>.github.io </p>
+        </div>
+        <div class="sub-sect7">
+            <br>
+            <button id="btn6">&</button>
+        </div>
+        <div>
+            <button id="btn7">5</button>
+        </div>
+    </div>
+    <br><br>
+    
+    <div class="sect8">
+        <div>
+            <h1>Not that you are up and running, here are <br>a few things you should know.</h1>
+        </div>
+        <div class="sub-sect8">
+            <div>
+                <h2>
+                    <a href="https://help.github.com/articles/using-jekyll-with-pages" id="bl">
+                        Blogging with Jekyll</a>
+                </h2>
+                <p>Using <a href="https://jekyllrb.com/" id="bl">Jekyll</a>, 
+                    you can blog using beautiful Markdown syntax, 
+                    and without having to deal with any databases.
+                <a href="https://jekyllrb.com/docs/" id="bl">Learn how to set up Jekyll</a></p>
+            </div>
+            <div>
+                <h2>
+                    <a href="https://help.github.com/articles/setting-up-a-custom-domain-with-pages" id="bl">
+                        Custom URLs</a>
+                </h2>
+                <p>Want to use your own custom domain for a GitHub Pages site? 
+                    Just create a file named CNAME and include your URL
+                <a href="https://help.github.com/articles/setting-up-a-custom-domain-with-pages" id="bl">
+                    Read more</a></p>
+            </div>
+            <div>
+                <h2>
+                    <a href="https://help.github.com/categories/20/articles" id="bl">
+                        Guides</a>
+                </h2>
+                <p>Learn how to create custom 404 pages, use submodules, and 
+                    <a href="https://help.github.com/categories/20/articles" id="bl">Learn more about </a>
+                <a href="https://help.github.com/categories/20/articles" id="bl">GitHub Pages.</a></p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
