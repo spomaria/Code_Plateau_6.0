@@ -1,5 +1,10 @@
+
+/* The main grid container */
 .grid-cont {
     display: grid;
+    /* This code specifies the number of columns on the grid
+        i.e. the number of times 'auto' appears (3)
+    */
     grid-template-columns: auto auto auto;
     background-color: #2196F3;
     padding: 30px;
@@ -7,11 +12,15 @@
     column-gap: 30px;
 }
 
+/* The pseudo-element selector enables us to format
+    only the first letter in every container (div)
+*/
 div::first-letter{
     font-size: 3rem;
     font-weight: 700;
 }
 
+/* Styling the first container on the first row */
 .item1_1 {
     background-color: magenta;
     border: 1px solid whitesmoke;
@@ -20,6 +29,7 @@ div::first-letter{
     text-align: center;
 }
 
+/* Styling the second container on the first row */
 .item1_2 {
     background-color: greenyellow;
     border: 1px solid whitesmoke;
@@ -28,6 +38,7 @@ div::first-letter{
     text-align: center;
 }
 
+/* Styling the third container on the first row */
 .item1_3 {
     background-color: peru;
     border: 1px solid whitesmoke;
@@ -36,7 +47,11 @@ div::first-letter{
     text-align: center;
 }
 
+/* Styling the First Container on the second row */
 .item2_1 {
+    /* allowing the first container to occupy the 
+        first two columns on the second row
+    */
     grid-column-end: span 2;
     /* background-color: orangered; */
     background-color: gold;
@@ -46,6 +61,7 @@ div::first-letter{
     text-align: center;
 }
 
+/* Styling the second container on the second row */
 .item2_2 {
     background-color: orange;
     border: 1px solid whitesmoke;
@@ -54,7 +70,11 @@ div::first-letter{
     text-align: center;
 }
 
+/* Styling the only container on the third row */
 .item_3 {
+    /* allowing the only container to occupy the 
+        all three columns on the third row
+    */
     grid-column-end: span 3;
     background-color: orangered;
     /* background-color: gold; */
