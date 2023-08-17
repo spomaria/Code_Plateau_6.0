@@ -1,4 +1,10 @@
 
+body{
+    margin: 0;
+    /* This makes the grid container fill the entire web page 
+        Note therefore that this is a body property
+    */
+}
 /* The main grid container */
 .grid-cont {
     display: grid;
@@ -6,10 +12,11 @@
         i.e. the number of times 'auto' appears (3)
     */
     grid-template-columns: auto auto auto;
-    background-color: #2196F3;
-    padding: 30px;
-    row-gap: 30px;
-    column-gap: 30px;
+    /* background-color: #2196F3; */
+    background-image: linear-gradient(180deg,#fdfefe, #0054ff);
+    padding: 0;
+    /* row-gap: 30px;
+    column-gap: 30px; */
 }
 
 /* The pseudo-element selector enables us to format
@@ -20,20 +27,36 @@ div::first-letter{
     font-weight: 700;
 }
 
+.grid-cont .column:first-child {
+    padding-left: 0;
+}
+  
+.grid-cont .column:last-child {
+  padding-right: 0;
+}
+
 /* Styling the first container on the first row */
 .item1_1 {
     background-color: magenta;
-    border: 1px solid whitesmoke;
-    padding: 100px;
+    /* background-image: linear-gradient(180deg,#fdfefe, #0054ff); */
+    /* border: 1px solid whitesmoke; */
+    padding: 150px;
     font-size: 30px;
     text-align: center;
+}
+
+.item1_1:hover {
+    background-color: rgba(0, 153, 255, 0.76);
+    color: whitesmoke;
+    /* flex-grow: 1; */
 }
 
 /* Styling the second container on the first row */
 .item1_2 {
     background-color: greenyellow;
-    border: 1px solid whitesmoke;
-    padding: 100px;
+    /* background-image: linear-gradient(180deg,#fdfefe, #ffd700); */
+    /* border: 1px solid whitesmoke; */
+    padding: 150px;
     font-size: 30px;
     text-align: center;
 }
@@ -41,8 +64,9 @@ div::first-letter{
 /* Styling the third container on the first row */
 .item1_3 {
     background-color: peru;
-    border: 1px solid whitesmoke;
-    padding: 100px;
+    /* background-image: linear-gradient(180deg,#fdfefe, #06bb06); */
+    /* border: 1px solid whitesmoke; */
+    padding: 150px;
     font-size: 30px;
     text-align: center;
 }
@@ -55,8 +79,9 @@ div::first-letter{
     grid-column-end: span 2;
     /* background-color: orangered; */
     background-color: gold;
-    border: 10px solid whitesmoke;
-    padding: 100px;
+    /* background-image: linear-gradient(180deg,#fdfefe, #0618bb); */
+    /* border: 3px solid whitesmoke; */
+    padding: 150px;
     font-size: 30px;
     text-align: center;
 }
@@ -64,8 +89,9 @@ div::first-letter{
 /* Styling the second container on the second row */
 .item2_2 {
     background-color: orange;
-    border: 1px solid whitesmoke;
-    padding: 100px;
+    /* background-image: linear-gradient(45deg,#fdfefe, #0618bb); */
+    /* border: 1px solid whitesmoke; */
+    padding: 150px;
     font-size: 30px;
     text-align: center;
 }
@@ -77,10 +103,15 @@ div::first-letter{
     */
     grid-column-end: span 3;
     background-color: orangered;
+    /* background-image: linear-gradient(45deg,#fdfefe, #0618bb); */
     /* background-color: gold; */
-    border: 10px solid whitesmoke;
-    padding: 100px;
+    /* border: 10px solid whitesmoke; */
+    padding: 150px;
     font-size: 30px;
     text-align: center;
 }
 
+.item_3:hover {
+    background-color: rgba(0, 153, 255, 0.76);
+    color: whitesmoke;
+}
