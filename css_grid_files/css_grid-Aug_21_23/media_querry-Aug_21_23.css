@@ -1,0 +1,33 @@
+@media screen and (max-width:900px) {
+    body{
+        background-color: rgb(122, 145, 245);
+        /* width: 30%; */
+        /* font-size: 0.5rem; */
+    }
+}
+
+@media screen and (max-width:900px) {
+    .main-container{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        column-gap: 1px;
+        margin: 10px 10px;
+        /* height: 400px; */
+    }
+
+    .container1{
+        grid-column-end: span 2;
+        background-color: aliceblue;
+        padding: 20px 50px;
+        border-left: solid green 10px;
+        margin-right: -2px;
+    }
+    
+    .containers{
+        background-color: whitesmoke;
+        border-right: solid green 10px;
+        border-left: none;
+        /* border: solid 5px; */
+    }
+    
+}

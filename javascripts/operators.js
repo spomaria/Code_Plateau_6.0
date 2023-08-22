@@ -64,15 +64,15 @@
 // console.log(192 | 456);
 
 
-let a = 50;
-let b = 100;
-let result = a ^ b;
-console.log(result);
+// let a = 50;
+// let b = 100;
+// let result = a ^ b;
+// console.log(result);
 
-let c = 10;
-let d = -10;
-console.log(~c);
-console.log(~d);
+// let c = 10;
+// let d = -10;
+// console.log(~c);
+// console.log(~d);
 
 // Conditional Statements
 // The 'if' Statement
@@ -82,10 +82,29 @@ console.log(~d);
 // }
 
 // The 'if ... else' statement
-var age = 15;
-if(age > 17){
-    console.log("qualified to code");
-}
-else{
-    console.log("not qualified to code")
-}
+// var age = 15;
+// if(age > 17){
+//     console.log("qualified to code");
+// }
+// else{
+//     console.log("not qualified to code")
+// }
+
+
+// Class for August 18, 2023
+let name = "Debby";
+// alert(name);
+
+// This is interpolation
+console.log(`My name is ${name}`);
+console.log(name.length);
+
+// the .slice function allows to pick part of a variable 
+// using the index.
+// The .slice function takes in two arguments,
+// -- the first argument is the starting point
+// -- the second argument is the number of characters to pick
+console.log(name.slice(0,1));
+
+// The Prompt function
+prompt("Name");
