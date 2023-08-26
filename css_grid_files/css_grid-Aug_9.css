@@ -19,6 +19,13 @@ body{
     column-gap: 30px; */
 }
 
+/* @media(max-width: 900px){
+    .grid-cont{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+} */
+
 /* The pseudo-element selector enables us to format
     only the first letter in every container (div)
 */

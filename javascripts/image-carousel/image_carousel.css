@@ -1,0 +1,68 @@
+body{
+    background-color: white;
+    /* width: 50%; */
+    align-items: center;
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+/* .main-container{
+    display: grid;
+    grid-template-columns: 95%;
+    row-gap: 10px;
+    width: 50%;
+    justify-content: center;
+    margin: 0 30%;
+    border: 1px solid grey;
+    box-shadow: 50px;
+} */
+
+.main-container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    /* width: 50%; */
+    justify-content: center;
+    margin: 0 30%;
+    padding: 20px;
+    border: 1px solid gray;
+    box-shadow: 10px 10px 5px gray;
+}
+
+.cont-1{
+    border: none;
+}
+
+/* .cont-2{
+    border: 1px solid gray;
+} */
+
+.cont-3{
+    border: 1px solid gray;
+    padding: 10px;
+}
+
+
+img{
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+}
+
+#ital{
+    font-style: italic;
+    font-size: 1.2rem;
+}
+
+ul{
+    /* This removes the bullet points */
+    list-style-type: none;
+    /* This removes the extra space at the beginning of each list item */
+    margin: 0;
+    padding: 0;
+}
+
+span{
+    /* This makes the font bold */
+    font-weight: bold;
+}

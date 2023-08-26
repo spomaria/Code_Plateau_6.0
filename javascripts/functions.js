@@ -70,14 +70,44 @@
 
 
 // Loops with operand(label)
+// let myArr1 = ["a", "b", "c", "d", "e"];
+// let myArr2 = ["e", "f", "g", "h", "i"];
+// toploop: for(const arr1Elem of myArr1){
+//     bottomloop: for(const arr2Elem of myArr2){
+//         if(arr1Elem == arr2Elem){
+//             break toploop
+//         }
+//         // console.log(`${arr1Elem} ${arr2Elem}`)
+//         document.write(`${arr1Elem} ${arr2Elem} \n <br> <br>`)
+//     }
+// }
+
+
+// Class of August 23, 2023
+// let myArr1 = ["a", "b", "c", "d", "e"];
+// let myArr2 = ["t", "c", "g", "h", "i"];
+// toploop: for(const arr1Elem of myArr1){
+//     console.log(arr1Elem);
+//     bottomloop: for(const arr2Elem of myArr2){
+//         if(arr1Elem == arr2Elem){
+//             break bottomloop
+//         }
+//         console.log(`${arr1Elem} ${arr2Elem}`)
+//         // document.write(`${arr1Elem} ${arr2Elem} \n <br> <br>`)
+//     }
+// }
+
+// for(let i=0; i < 5; i++){
+//     console.log(i, "\n")
+// }
+
 let myArr1 = ["a", "b", "c", "d", "e"];
 let myArr2 = ["e", "f", "g", "h", "i"];
-toploop: for(const arr1Elem of myArr1){
-    bottomloop: for(const arr2Elem of myArr2){
-        if(arr1Elem == arr2Elem){
-            break toploop
-        }
-        // console.log(`${arr1Elem} ${arr2Elem}`)
-        document.write(`${arr1Elem} ${arr2Elem} \n <br> <br>`)
+topLoop: for(let i = 0; i < myArr1.length; i++){
+    console.log(myArr1[i], "\n")
+    bottomLoop: for(let j = 0; j < myArr2.length; j++){
+        if(i == 2) break bottomLoop
+        if(i == 4) break topLoop
+        console.log(myArr2[j], "\n")
     }
 }
