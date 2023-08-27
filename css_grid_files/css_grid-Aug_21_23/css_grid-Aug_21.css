@@ -1,7 +1,7 @@
 body{
     background-color: rgba(160, 248, 197, 0.979);
     margin: 0;
-    font-size: 1.2rem;
+    font-size: 1.5vw;
     font-family: 'Arimo', sans-serif;
     font-weight: 300;
 }
@@ -10,9 +10,9 @@ body{
 .main-container{
     display: grid;
     grid-template-columns: 24.5% 24.5% 17% 17% 17%;
-    /* grid-template-columns: 500px 500px 300px 300px 300px; */
+    grid-auto-flow: column dense;
     column-gap: 2px;
-    margin: 40px 40px;
+    margin: 40px 30px;
     /* height: 400px; */
 }
 
@@ -20,7 +20,7 @@ body{
 .container1{
     grid-column-end: span 2;
     background-color: aliceblue;
-    padding: 20px 50px;
+    padding: 20px 50px 150px 50px;
     border-left: solid green 10px;
     margin-right: -2px;
 }
@@ -50,13 +50,15 @@ img:hover{
     justify-content: flex-end;
     gap: 20px;
     padding: 5px 5px 100px 5px;
-    /* flex-flow: row wrap;
-    align-content: flex-start; */
+    /* This makes the navigation bar adjust
+        automatically as the screen size change
+    */
+    flex-wrap: wrap;
 }
 
 .nav-bar a{
     text-decoration: none;
-    font-size: 2rem;
+    font-size: 1.6vw;
     color: black;
     font-weight: 600;
 }
@@ -67,8 +69,13 @@ img:hover{
 
 .sub-container{
     display: grid;
-    grid-template-columns: 35% 22% 43%;
-    row-gap: 10px;
+    grid-template-columns: 35% 25% 40%;
+    row-gap: 50px;
+    font-size: 1vw;
+}
+
+h3{
+    font-size: 1.3vw;
 }
 
 .green{
@@ -76,20 +83,20 @@ img:hover{
 }
 
 #bigger{
-    font-size: 3em;
+    font-size: 4.5vw;
     font-weight: 900;
 }
 
 button{
-    padding: 20px;
-    font-size: 1.3rem;
+    padding: 10px 20px;
+    font-size: 1.1vw;
     border-radius: 10px;
-    font: bold;
-    font-weight: 600;
+    /* font: bold; */
+    /* font-weight: 600; */
 }
 
 #normal{
-    font-size: 1.5rem;
+    font-size: 1.5vw;
 }
 
 #get-started{
@@ -105,7 +112,7 @@ button{
     width: 100%;
     border: none;
 }
-
+/* 
 #x-space{
     padding: 100px;
-}
+} */
