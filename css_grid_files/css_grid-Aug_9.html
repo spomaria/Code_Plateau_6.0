@@ -4,7 +4,134 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./css_grid-Aug_9.css">
+    <!-- <link rel="stylesheet" href="./css_grid-Aug_9.css"> -->
+    <style>
+        
+        body{
+            margin: 0;
+            /* This makes the grid container fill the entire web page 
+                Note therefore that this is a body property
+            */
+        }
+        /* The main grid container */
+        .grid-cont {
+            display: grid;
+            /* This code specifies the number of columns on the grid
+                i.e. the number of times 'auto' appears (3)
+            */
+            grid-template-columns: repeat(3, 1fr);
+            /* background-color: #2196F3; */
+            background-image: linear-gradient(180deg,#fdfefe, #0054ff);
+            padding: 0;
+            /* row-gap: 30px;
+            column-gap: 30px; */
+        }
+
+        /* @media(max-width: 900px){
+            .grid-cont{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+            }
+        } */
+
+        /* The pseudo-element selector enables us to format
+            only the first letter in every container (div)
+        */
+        div::first-letter{
+            font-size: 3rem;
+            font-weight: 700;
+        }
+
+        .grid-cont .column:first-child {
+            padding-left: 0;
+        }
+        
+        .grid-cont .column:last-child {
+        padding-right: 0;
+        }
+
+        /* Styling the first container on the first row */
+        .item1_1 {
+            background-color: magenta;
+            /* background-image: linear-gradient(180deg,#fdfefe, #0054ff); */
+            /* border: 1px solid whitesmoke; */
+            padding: 150px;
+            font-size: 30px;
+            text-align: center;
+        }
+
+        .item1_1:hover {
+            background-color: rgba(0, 153, 255, 0.76);
+            color: whitesmoke;
+            /* flex-grow: 1; */
+        }
+
+        /* Styling the second container on the first row */
+        .item1_2 {
+            background-color: greenyellow;
+            /* background-image: linear-gradient(180deg,#fdfefe, #ffd700); */
+            /* border: 1px solid whitesmoke; */
+            padding: 150px;
+            font-size: 30px;
+            text-align: center;
+        }
+
+        /* Styling the third container on the first row */
+        .item1_3 {
+            background-color: peru;
+            /* background-image: linear-gradient(180deg,#fdfefe, #06bb06); */
+            /* border: 1px solid whitesmoke; */
+            padding: 150px;
+            font-size: 30px;
+            text-align: center;
+        }
+
+        /* Styling the First Container on the second row */
+        .item2_1 {
+            /* allowing the first container to occupy the 
+                first two columns on the second row
+            */
+            grid-column-end: span 2;
+            /* background-color: orangered; */
+            background-color: gold;
+            /* background-image: linear-gradient(180deg,#fdfefe, #0618bb); */
+            /* border: 3px solid whitesmoke; */
+            padding: 150px;
+            font-size: 30px;
+            text-align: center;
+        }
+
+        /* Styling the second container on the second row */
+        .item2_2 {
+            background-color: orange;
+            /* background-image: linear-gradient(45deg,#fdfefe, #0618bb); */
+            /* border: 1px solid whitesmoke; */
+            padding: 150px;
+            font-size: 30px;
+            text-align: center;
+        }
+
+        /* Styling the only container on the third row */
+        .item_3 {
+            /* allowing the only container to occupy the 
+                all three columns on the third row
+            */
+            grid-column-end: span 3;
+            background-color: orangered;
+            /* background-image: linear-gradient(45deg,#fdfefe, #0618bb); */
+            /* background-color: gold; */
+            /* border: 10px solid whitesmoke; */
+            padding: 150px;
+            font-size: 30px;
+            text-align: center;
+        }
+
+        .item_3:hover {
+            background-color: rgba(0, 153, 255, 0.76);
+            color: whitesmoke;
+        }
+
+    </style>
 </head>
 <body>
     <div class = "grid-cont">
@@ -19,7 +146,7 @@
         <div class="item_3">footer</div>
     </div>
 
-    <script>
+    <!-- <script>
         // the if statement
 
         // var age = 20;
@@ -37,6 +164,6 @@
         }
 
         
-    </script>
+    </script> -->
 </body>
 </html>
