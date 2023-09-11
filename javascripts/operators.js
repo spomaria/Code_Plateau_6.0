@@ -92,19 +92,50 @@
 
 
 // Class for August 18, 2023
-let name = "Debby";
+// let name = "Debby";
 // alert(name);
 
 // This is interpolation
-console.log(`My name is ${name}`);
-console.log(name.length);
+// console.log(`My name is ${name}`);
+// console.log(name.length);
 
 // the .slice function allows to pick part of a variable 
 // using the index.
 // The .slice function takes in two arguments,
 // -- the first argument is the starting point
 // -- the second argument is the number of characters to pick
-console.log(name.slice(0,1));
+// console.log(name.slice(0,1));
 
 // The Prompt function
-prompt("Name");
+// prompt("Name");
+
+// let x = 5;
+// let y = 20;
+// x<y? console.log(`${x} is less than ${y}`)//:else console.log(`${x} is greater than ${y}`);
+// The above lines of code didn't work
+
+// Display the numbers 0 to 9 using the while loop
+
+// console.log(`Starting the loop:`);
+// let i = 0; 
+// while(i<10){
+//     console.log(i);
+//     i++;
+// }
+// console.log(`Loop has ended`);
+
+// array methods
+let myArr = [];
+myArr.push("name");
+console.log(myArr);
+myArr.push("walk");
+console.log(myArr);
+myArr.push("go");
+console.log(myArr);
+myArr.push("jump");
+console.log(myArr);
+// the .shift method removes an array element from the left
+myArr.shift(myArr);
+console.log(myArr);
+myArr.unshift("surname");
+console.log(myArr);

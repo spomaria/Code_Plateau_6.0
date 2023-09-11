@@ -81,19 +81,95 @@
 
 // Using the do while loop, iterate over the car object as long as 
 // i < the length of car
-let i = 0;
-const car = ["Volvo", "Benz", "Toyota", "Tesla", "Honda", "Ferrari"];
-do{
-    // console.log(car[i]);
-    console.log(car[i].slice(1,3));
-    i++;
-} 
-while(i < car.length)
+// let i = 0;
+// const car = ["Volvo", "Benz", "Toyota", "Tesla", "Honda", "Ferrari"];
+// do{
+//     // console.log(car[i]);
+//     console.log(car[i].slice(1,3));
+//     i++;
+// } 
+// while(i < car.length)
 
 
-
-
-// let myNum = 50;
-// do {
-//     console.log(myNum);
+// // using the i-- post-iteraton-condition
+// let arr1 = ["a", "b", "c", "d"];
+// for(i = arr1.length -1; i >=0; i--){
+//     console.log(arr1[i]);
 // }
+
+// let x = arr1.length;
+// while(x > 0){
+//     arr1.pop();
+//     x--;
+// }
+// console.log(arr1);
+
+// do{
+//     arr1.shift();
+//     x--;
+// } while(x>0)
+// console.log(arr1);
+
+// let i = 0;
+// let j = 1;
+// let k = 0;
+// console.log("Starting Fibbonaci Series");
+// while(k <=10){
+//     k = i + j
+//     i = j
+//     j = k
+//     console.log(`k = ${k}, i = ${i}, j = ${j}`)
+// }
+
+// let obj1 ={a: "a", b: "b", c: "c"}
+// for(const elem in obj1){
+//     console.log(elem)
+// }
+
+// Class of September 11, 2023
+// let numArr = [10,20,30,40,50,60];
+// let sumArr = [];
+// for(const arr1 of numArr){
+//     sumArr.push(arr1 + 10)
+// }
+// // console.log(sumArr)
+
+// let newArr = [];
+// let numArr1 = [70, 80, 20, 90, 50];
+// firstLoop: for(let arr of numArr){
+//     secondLoop: for (let arr1 of numArr1){
+//         if (arr == arr1) newArr.push(arr)
+//     }
+// }
+// console.log(newArr)
+
+const myArrLines = [
+    "Normal Line",
+    "Solid Line",
+    "Dotted line",
+    "Wavy Line",
+    "Dashed line",
+    "Double Line",
+    "Groove Line",
+    "Ridge Line",
+    "Outset Line",
+    "Inset Line"
+];
+
+let newArrLines = [];
+for(let myElem of myArrLines){
+    if(myElem.length == 11 && myElem[7] === "L"){
+        newArrLines.unshift(myElem)
+    }
+}
+console.log(newArrLines)
+
+// Using the .map array method 
+let numArr1 = [70, 80, 20, 90, 50];
+let newArr = numArr1.map(x => x + 10)
+console.log(newArr)
+
+let fname = ["Nengak", "Igbarak", "Songrit", "Maritji"];
+let sname = ["Goltong"];
+let fulnames = fname.map(x => `${x} ${sname}`);
+console.log(fulnames);
