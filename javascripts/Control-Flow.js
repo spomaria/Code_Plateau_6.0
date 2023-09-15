@@ -81,14 +81,14 @@
 
 // Using the do while loop, iterate over the car object as long as 
 // i < the length of car
-let i = 0;
-const car = ["Volvo", "Benz", "Toyota", "Tesla", "Honda", "Ferrari"];
-do{
-    // console.log(car[i]);
-    console.log(car[i].slice(1,3));
-    i++;
-} 
-while(i < car.length)
+// let i = 0;
+// const car = ["Volvo", "Benz", "Toyota", "Tesla", "Honda", "Ferrari"];
+// do{
+//     // console.log(car[i]);
+//     console.log(car[i].slice(1,3));
+//     i++;
+// } 
+// while(i < car.length)
 
 
 
@@ -97,3 +97,67 @@ while(i < car.length)
 // do {
 //     console.log(myNum);
 // }
+
+
+
+// for(let i =1; i < 6; i++){
+//     console.log(i)
+// }
+
+// const myArrLines = [
+//         "Normal Line",
+//         "Solid Line",
+//         "Dotted Line",
+//         "Wavy Line",
+//         "Dashed Line",
+//         "Double Line",
+//         "Groove Line",
+//         "Ridge Line",
+//         "Outset Line",
+//         "Inset Line"
+//     ]
+//     for(const line of myArrLines){ //for .. of 
+//         if(line.startsWith('D')) {
+//             console.log(`String starting with 'D' was skipped`)
+//             continue
+//         }
+//         console.log(line)
+// }
+
+// for(let i =5; i > 1; i--){
+//     console.log(i)
+// }
+
+
+// let myArr1 = ["Teenoq", "Auxide", "Kukut", "Peace", "Bethel"]
+// let myArr2 = ["Emmanuella", "Felicia", "Teenoq", "Wills", "Richie"]
+// firstLoop: for(const arrElem1 of myArr1){
+//     console.log(arrElem1)
+//     secondLoop: for(const arrElem2 of myArr2){
+//         if(arrElem1 == arrElem2){
+//             continue //firstLoop
+//         }
+//         console.log(`"${arrElem1}" and "${arrElem2}" can be paired`)
+//     }
+// }
+
+const myArrLines = [
+        "Normal Line",
+        "Solid Line",
+        "Dotted Line",
+        "Wavy Line",
+        "Dashed Line",
+        "Double Line",
+        "Groove Line",
+        "Ridge Line",
+        "Outset Line",
+        "Inset Line"
+    ]
+    for(const elem of myArrLines){ 
+        // if word length is not up to nine, don't print
+        if(elem.length > 9 ) {
+            if(elem.startsWith('I'))
+            continue
+        }
+        console.log(elem)
+}

@@ -101,13 +101,58 @@
 //     console.log(i, "\n")
 // }
 
-let myArr1 = ["a", "b", "c", "d", "e"];
-let myArr2 = ["e", "f", "g", "h", "i"];
-topLoop: for(let i = 0; i < myArr1.length; i++){
-    console.log(myArr1[i], "\n")
-    bottomLoop: for(let j = 0; j < myArr2.length; j++){
-        if(i == 2) break bottomLoop
-        if(i == 4) break topLoop
-        console.log(myArr2[j], "\n")
-    }
+// let myArr1 = ["a", "b", "c", "d", "e"];
+// let myArr2 = ["e", "f", "g", "h", "i"];
+// topLoop: for(let i = 0; i < myArr1.length; i++){
+//     console.log(myArr1[i], "\n")
+//     bottomLoop: for(let j = 0; j < myArr2.length; j++){
+//         if(i == 2) break bottomLoop
+//         if(i == 4) break topLoop
+//         console.log(myArr2[j], "\n")
+//     }
+// }
+
+
+// Class of September 15, 2023
+// Class Work Number 1
+
+// Create a multi-dimensional (nested) array containing seven sub-arrays
+// The first element of each sub-array should be a string as the name of the item
+// The second element should be a number representing the quantity
+let shoppingList = [
+    ["Clipper", 10000],
+    ["Perfume", 5000],
+    ["Toothpaste", 1000],
+    ["T-Shirt", 2000],
+    ["Pouch", 1500],
+    ["Juice", 1200],
+    ["Four Cousins", 5000]
+];
+// console.log(shoppingList.length)
+// console.log(shoppingList)
+
+// Access and change the elements of the first, fourth and sixth sub-arrays
+// to ["Marker", 50], ["Clip", 25], ["Paper", 2000] respectively
+// Creating a list of the index of array elements to be changed
+let shopListInd = [0,3,5];
+// Creating a list of new elements to replace the ones specified
+let shopListChange = [
+    ["Marker", 50],
+    ["Clip", 25],
+    ["Paper", 2000]
+];
+
+// Replacing the old elements with the new ones
+for(let i of shopListInd){
+    shoppingList.splice(i,1,shopListChange[shopListInd.indexOf(i)])
 }
+console.log(shoppingList)
+
+let newShoppingList = [
+    ["Bama", 3500], 
+    ["Oats", 4000]
+];
+
+shoppingList = newShoppingList.concat(shoppingList);
+console.log(shoppingList)
+console.log(shoppingList.length)
