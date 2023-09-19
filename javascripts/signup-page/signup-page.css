@@ -1,0 +1,69 @@
+body{
+    margin: 0;
+    background-color: #408EC6;
+    /* width: 60%; */
+    /* align-items: center; */
+    text-align: center;
+    /* justify-content: center; */
+    color: aliceblue;
+    font-size: 1.2vw;
+}
+
+#intro{
+    font-size: 1.9vw;
+}
+
+img{
+    height: 5vw;
+    width: 5vw;
+    position: fixed;
+    left: 27vw;
+    top: 1vw;
+}
+
+#codeplateau{
+    /* color: #408EC6; */
+    font-style: bold;
+    font-weight: 700;
+}
+
+#span-in{
+    background-color: aliceblue;
+    color: #408EC6;
+    border-radius: 10%;
+}
+
+#theform{
+    background-color: aliceblue;
+    /* color: #408EC6; */
+    color: black;
+    margin: 0 30%;
+    padding: 3%;
+}
+
+form{
+    text-align: left;
+}
+
+input{
+    width: 97%;
+}
+
+#bolder{
+    font-weight: 700;
+}
+
+button{
+    width: 100%;
+    color: aliceblue;
+    background-color: #408EC1;
+    font-size: 1.2vw;
+    font-weight: 700;
+    padding: 2% 0;
+    border: none;
+}
+
+#signin{
+    color: #408EC6;
+    font-weight: 700;
+}
