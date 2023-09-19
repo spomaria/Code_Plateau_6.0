@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dom-exercise-javascript</title>
+    <style>
+        body{
+            font-size: 3vw;
+        }
+        .main-container{
+            /* margin-top: 10vw; */
+            margin: 10%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-content: center;
+        }
+
+        #circle{
+            width: 20vw;
+            height: 20vw;
+            border-radius: 50%;
+            /* float: left; */
+            margin-right: 5vw;
+            background-color: #196F2D;
+        }
+
+        #rounded{
+            width: 20vw;
+            height: 20vw;
+            border-radius: 25%;
+            /* float: left; */
+            margin-right: 5vw;
+            background-color: #5dade2;
+        }
+
+        #square{
+            width: 20vw;
+            height: 20vw;
+            border-radius: 0%;
+            /* float: left; */
+            margin-right: 5vw;
+            background-color: #58d68d;
+        }
+
+        #circle:hover, #rounded:hover, #square:hover{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <div id="circle"></div>
+        <div id="rounded"></div>
+        <div id="square"></div>
+    </div>
+    <div class="main-container">
+        <p id="info">The Circle, The Rounded and The Square</p>
+    </div>
+    
+    <script>
+        
+        document.getElementById("circle").onclick = function(){
+            // let roundedDisplay = document.getElementById("rounded").style.display;
+            // let circleDisplay = document.getElementById("circle").style.display;
+            // let squareDisplay = document.getElementById("square").style.display;
+            // let infoText = document.getElementById("info").innerHTML;
+            document.getElementById("circle").style.display = "none";
+            if(document.getElementById("rounded").style.display == "none" && 
+            document.getElementById("square").style.display == "none"){
+                document.getElementById("info").innerHTML = "You have eliminated all three";
+            }
+            else if(document.getElementById("rounded").style.display == "none"){
+                document.getElementById("info").innerHTML = "Rounded and Circle eliminated. Square Left";
+            }
+            else if(document.getElementById("square").style.display == "none"){
+                document.getElementById("info").innerHTML = "Square and Circle eliminated. Rounded Left";
+            }
+            else{
+                document.getElementById("info").innerHTML = "Circle eliminated. Rounded and Square Left";
+            }
+        }
+
+        document.getElementById("rounded").onclick = function(){
+            document.getElementById("rounded").style.display = "none";
+            if(document.getElementById("circle").style.display == "none" && 
+            document.getElementById("square").style.display == "none"){
+                document.getElementById("info").innerHTML = "You have eliminated all three";
+            }
+            else if(document.getElementById("circle").style.display == "none"){
+                document.getElementById("info").innerHTML = "Circle and Rounded eliminated. Square Left";
+            }
+            else if(document.getElementById("square").style.display == "none"){
+                document.getElementById("info").innerHTML = "Square and Rounded eliminated. Circle Left";
+            }
+            else{
+                document.getElementById("info").innerHTML = "Rounded eliminated. Circle and Square Left";
+            }
+        }
+
+        document.getElementById("square").onclick = function(){
+            document.getElementById("square").style.display = "none";
+            if(document.getElementById("circle").style.display == "none" && 
+            document.getElementById("rounded").style.display == "none"){
+                document.getElementById("info").innerHTML = "You have eliminated all three";
+            }
+            else if(document.getElementById("circle").style.display == "none"){
+                document.getElementById("info").innerHTML = "Circle and Square eliminated. Rounded Left";
+            }
+            else if(document.getElementById("rounded").style.display == "none"){
+                document.getElementById("info").innerHTML = "Rounded and Square eliminated. Circle Left";
+            }
+            else{
+                document.getElementById("info").innerHTML = "Square eliminated. Circle and Rounded Left";
+            }
+        }
+    </script>
+</body>
+</html>

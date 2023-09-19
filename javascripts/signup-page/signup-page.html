@@ -14,9 +14,10 @@
     </div>
 
     <div id="theform">
-        <form>
+        <form name="myForm" action="/action_page.php" 
+        onsubmit="return validateForm()" method="post">
             <label for="fname">First Name:</label>
-            <input type="text" name="fname" id="fname">
+            <input type="text" id="fname" required>
             <br>
             <label for="lname">Last Name:</label>
             <input type="text" name="lname" id="lname">
@@ -35,11 +36,13 @@
             Public Policy,</span> and <span id="bolder">Cookie policy
         </span></p>
 
-        <button id="join"> Join now</button>
+        <button id="join" type="button" onclick="validateForm()"> Join now</button>
         <p>or</p>
         <button id="continue">Continue with GitHub</button>
         <p>Already subscribed? <span id="signin">Sign in</span></p>
     </div>
     <p>Code Plateau Cooperation &copy; 2023</p>
+
+    <script src="./signup-page.js"></script>
 </body>
 </html>
