@@ -1,0 +1,28 @@
+.hero{
+    color: white;
+    text-align: center;
+    background-color: rgba(238, 230, 230, 0.993);
+    height: 60vh;
+    padding: 2vw;
+}
+
+.hero h1{
+    color: #fff;
+    margin-top: 5vh;
+    font-size: 6vw;
+    font-weight: 700;
+}
+
+.hero h5{
+    margin-top: 10vh;
+    color: plum;
+}
+
+.hero button{
+    padding: 1vw 2vw;
+    color: #fff;
+    background-color: plum;
+    border: none;
+    border-radius: 50px;
+    margin-top: 10vh;
+}

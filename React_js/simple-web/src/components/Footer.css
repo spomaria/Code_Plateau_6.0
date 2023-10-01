@@ -1,0 +1,21 @@
+.footer{
+    padding: 2.3vw;
+    background-color: plum;
+    display: flex;
+    gap: 1vw;
+    justify-content: center;
+    /* margin-left: 100px; */
+    /* height: 50px; */
+    /* width: 100%; */
+}
+
+.footer a{
+    text-decoration: none;
+    margin-left: 2vw;
+    color: white;
+    font-size: 2vw;
+}
+
+.footer a:hover{
+    color: rgb(218, 24, 218);
+}

@@ -14,11 +14,12 @@ body{
 }
 
 img{
-    height: 5vw;
-    width: 5vw;
+    height: 4vw;
+    width: 4vw;
     position: fixed;
-    left: 27vw;
-    top: 1vw;
+    left: 30vw;
+    top: .3vw;
+    border-radius: 10%;
 }
 
 #codeplateau{
@@ -30,7 +31,7 @@ img{
 #span-in{
     background-color: aliceblue;
     color: #408EC6;
-    border-radius: 10%;
+    border-radius: 5%;
 }
 
 #theform{
@@ -38,7 +39,7 @@ img{
     /* color: #408EC6; */
     color: black;
     margin: 0 30%;
-    padding: 3%;
+    padding: 2% 3%;
 }
 
 form{
